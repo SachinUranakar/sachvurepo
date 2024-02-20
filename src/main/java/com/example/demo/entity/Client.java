@@ -25,6 +25,7 @@ public class Client {
 	}
 
 	public double getProfit() {
+		System.out.println("git check"); 
 		return profit;
 	}
 
