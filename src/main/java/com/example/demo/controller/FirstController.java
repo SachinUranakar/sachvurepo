@@ -28,6 +28,7 @@ public class FirstController {
 	@PostMapping("/create")
 	@ResponseBody
 	public Client createClient(@RequestBody Client client) {
+		System.out.println("client--"+client);
 		return fstservice.createClient(client);
 	}
 
