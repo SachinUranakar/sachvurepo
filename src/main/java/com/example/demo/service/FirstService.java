@@ -3,6 +3,7 @@ package com.example.demo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -18,9 +19,9 @@ public class FirstService {
 
 @Autowired		
 ClientRepository clientrepo;	
+
 	
 public Client createClient(Client client) {
-	
 	return clientrepo.save(client);
 	
 }

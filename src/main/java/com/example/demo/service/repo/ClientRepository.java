@@ -30,7 +30,6 @@ public interface ClientRepository extends MongoRepository<Client, String> {
 	@Query("{\"name\":\"?0\"}")
 	public  List<Client> getByName(String name);
 	
-//	@Query("{\"name\":\"?0\"},{\"mail\" :\"?1\"}")
 //	public List<Client> getByNameEmail(String name,String mail);
 @Query("{\r\n"
 		+ "    $or : [\r\n"

@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -28,7 +29,6 @@ public class FirstController {
 	@PostMapping("/create")
 	@ResponseBody
 	public Client createClient(@RequestBody Client client) {
-		System.out.println("client--"+client);
 		return fstservice.createClient(client);
 	}
 
